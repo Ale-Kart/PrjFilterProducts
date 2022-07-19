@@ -17,7 +17,26 @@
 			<input type="search" class="search-box__input" placeholder="search" id="search-products">
 		</div>
 
-		<div class="list-products"></div>
+		<div class="render">
+			<aside class="aside-categories">
+				<h4>Filtrar por categorias</h4>
+				<ul class="aside-categories-list">
+					<li class="aside-categories-item">
+						<input name="category-products" type="radio" class="aside-categories-radio" id="all-products" checked>
+						<label for="all-products" class="aside-categories-label">Todos</label>
+					</li>
+					<li class="aside-categories-item">
+						<input name="category-products" type="radio" class="aside-categories-radio" id="hardware">
+						<label for="hardware" class="aside-categories-label">Hardware</label>
+					</li>
+					<li class="aside-categories-item">
+						<input name="category-products" type="radio" class="aside-categories-radio" id="smartphone">
+						<label for="smartphone" class="aside-categories-label">Smartphones</label>
+					</li>
+				</ul>
+			</aside>
+			<div class="list-products"></div>
+		</div>
 
 	</div>
 
