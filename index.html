@@ -19,21 +19,24 @@
 
 		<div class="render">
 			<aside class="aside-categories">
-				<h4>Filtrar por categorias</h4>
-				<ul class="aside-categories-list">
-					<li class="aside-categories-item">
-						<input name="category-products" type="radio" class="aside-categories-radio" id="all-products" checked>
-						<label for="all-products" class="aside-categories-label">Todos</label>
-					</li>
-					<li class="aside-categories-item">
-						<input name="category-products" type="radio" class="aside-categories-radio" id="hardware">
-						<label for="hardware" class="aside-categories-label">Hardware</label>
-					</li>
-					<li class="aside-categories-item">
-						<input name="category-products" type="radio" class="aside-categories-radio" id="smartphone">
-						<label for="smartphone" class="aside-categories-label">Smartphones</label>
-					</li>
-				</ul>
+				<div class="radio-group">
+					<h4 class="aside-categories-title">Filter by Categories</h4>
+					<ul class="aside-categories-list">
+						<li class="aside-categories-item">
+							<input name="category-products" type="radio" class="aside-categories-radio" id="all-products" checked>
+							<label for="all-products" class="aside-categories-label">All</label>
+						</li>
+					</ul>
+				</div>
+				<div class="slider-price">
+					<h4>Filter by price</h4>
+					<div class="slider-price__element">
+						<!-- <label id="js-slider-label"></label> -->
+						<input id="js-slider-price" class="component-slider-price" type="range" value="100" max="2000" min="100"
+							step="10" disabled>
+						<output id="display-slider-price">price from <strong>R$ 100</strong> to <strong>R$ 500,00</strong></output>
+					</div>
+				</div>
 			</aside>
 			<div class="list-products"></div>
 		</div>
